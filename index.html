@@ -31,7 +31,7 @@ body{margin:0;padding:0;width:100%; }
 
 .hidett{display:none;}
 .stylecard img{width:70%; height:200px; }
-.card-title{display:flex;justify-content:center; align-items:center;}
+.card-title{display:flex;justify-content:center; align-items:center; color:#0b5876;}
 .card{background:#f7f7f7;}
 .card .cardimg{background:#d3d3d3;}
 .cardimg, .card-body{border:1px solid black;}
@@ -40,12 +40,13 @@ body{margin:0;padding:0;width:100%; }
 #hidebtn3{display:none;}
 #hidebtn4{display:none;}
 #hidebtn5{display:none;}
-.card-text{transition:.4s;}
+.card-text{transition:.4s; font-weight:normal;}
 
 #phonebtn{font-size:23px;}
 
 .clkbtn{border-radius:20px 20px 20px 20px; color:#1080ae;}
-#bblogoimg{width:61%; height:320px;}
+.turbanstyle .clkbtn:hover{color:#0b5876;}
+#bblogoimg{width:61%; height:320px; margin-left:41px;  }
 #sec4text1{font-size:44px;}
 #sec4text2{font-size:26px;}
 #sec4logo{width:40px; height:40px;}
@@ -59,25 +60,42 @@ body{margin:0;padding:0;width:100%; }
 
 
 
-.footer{background:#1080ae; height:300px; margin-top:30px;}
+.footer{background:#0b5876; height:250px; margin-top:30px;}
+.cpright{background:#1080ae;; height:60px;}
 #freediv{width:100%; height:15vh; background:#1080ae; position:absolute; top:0; z-index:-10;}
 #freediv2{height:30px;}
 #freediv3{height:30px;}
 #freediv4{height:40px;}
+#freelast{height:30px;}
  #offcanvasNavbar{ width:330px;}
  
- 
+ .footdata{width:100%; padding-top:0px; }
+ .footdata .footer{display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap;}
+ .footer div{width:30%;}
+ #fstyle{ width:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; }
+ #fstyle a{color:white; }
+ #fstyle ul{list-style:none;}
+ #fstyle li{margin-top:3px;}
+ #fstyle #links{width:100%; display:flex;  flex-direction:column; align-items:center; justify-content:center;}
+ #fstyle #liicon{width:100%; text-align:center;}
+ #fstyle #liicon a{margin-left:10px;}
+ .cpright #lasticons{display:none;}
+#liicon a:hover{border: 2px solid white; padding:5px; border-radius:50%;} 
+#links a:hover{color:#59badd;}
+.galimg{height:300px;}
+.gallery .card{margin-top:50px;}
+
 
 @media (max-width:650px){
 #photo{width:40px;height:40px;  margin-left:4px;}
 .section2 h1{font-size:20px;}
 .section2 h4{font-size:16px;}
 #offcanvasNavbar{ width:70%;}
-#bblogoimg{width:50%; height:200px;}
-
+#bblogoimg{width:60%; height:200px;  margin-left:0px;}
 .dabba .box{width:100%; margin-left:10px; margin-right:10px;}
 .mystyles .style{width:90%; margin-left:20px; margin-right:20px;}
-.dabba{margin:20px;}
+#mapus{padding-right:15px;}
+.dabba{margin:2px;}
 #part1{width:90%;}
 #part2{width:90%; display:flex; align-items:center; justify-content:center; margin-left:20px;}
 #navhead{ font-size:16px; font-weight:bold; margin-left:10px;  }
@@ -86,6 +104,18 @@ body{margin:0;padding:0;width:100%; }
 #sec4text2{font-size:20px;}
 #sec4logo{width:30px; height:30px;}
 #sec4last{font-size:20px;}
+.footer{height:auto;}
+ .footer div{width:90%; }
+ 
+  #mobhide{display:none;}
+  #fstyle #links ul{display:grid;  grid-template-columns:1fr 1fr;  }
+  #fstyle li{margin:10px; }
+  #aboutft h4{text-align:center; margin-top:6px;}
+  #aboutft #pfoot{text-align:center;}
+  .cpright #lasticons{display:flex;}
+  #lasticons{display:flex; align-items:center; justify-content:space-around; padding-top:20px;}
+  #lasticons a{color:white; font-size:20px; }
+  #lasticons a:hover{border: 1px solid white; border-radius:50%;}
 }
 </style>
 </head>
@@ -111,12 +141,15 @@ body{margin:0;padding:0;width:100%; }
       </div>
 	
      <div class="menulinks"> 
-   <a href="#freediv"><i class="fas fa-home"></i> Home page</a>
-   <a href="#aboutpage" onclick="clkabt()"><i class="fas fa-user"></i>About Us</a>
+   <a href="#freediv" style="margin-left:-3.5px;"><i class="fas fa-home"></i>Home page</a>
+   <a href="#aboutpage"><i class="fas fa-user"></i>About Us</a>
    <a href="#freediv2"><i class="fab fa-youtube"></i>Youtube videos</a>
    <a href="#freediv3"> <i class="fas fa-th"></i>Turban Styles</a>
      <a href="#freediv4"><i class="fas fa-phone-square-alt"></i>Turban Bookings</a>
-	   <a href="">Home page</a>
+	 <a href="#freelast"><i class="far fa-images"></i>Gallery</a>
+	 <hr style="background:#0b5876;">
+	   <a href="#footer"><i class="fas fa-address-book"></i>Contact us</a>
+	      <a href="https://wa.me/message/UUX4XBPTHX7YD1"><i class="far fa-question-circle"></i>Get Help</a>
    </div>
   </div>
  
@@ -138,7 +171,7 @@ body{margin:0;padding:0;width:100%; }
 
 <div class="section3">
 <center>
-<img src="bblogo2.png" alt="mr. babber training coach" id="bblogoimg" style="margin-left:41px; " >
+<img src="bblogo2.png" alt="mr. babber training coach" id="bblogoimg" >
 
 </center>
 </div>
@@ -153,9 +186,9 @@ body{margin:0;padding:0;width:100%; }
 <p id="sec4text2" style=" margin-top:-10px;">(Turban Coach)</p>
 
 <div id="icons">
-<a href="#" style=" margin:12px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" id="sec4logo" alt="instagram"></a>
-<a href="#" style=" margin:12px;" ><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" id="sec4logo" alt="facebook"></a>
-<a href="#" style=" margin:12px;"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/telegram-512.png" id="sec4logo" alt="telegram"></a>
+<a href="https://www.instagram.com/babberturbantrainingcenter/" style=" margin:12px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" id="sec4logo" alt="instagram"></a>
+<a href="https://m.facebook.com/Babber-Turban-Training-Center-106855665228513/?ref=bookmarks" style=" margin:12px;" ><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" id="sec4logo" alt="facebook"></a>
+<a href="https://t.me/BabberTurbanTrainingCenter" style=" margin:12px;"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/telegram-512.png" id="sec4logo" alt="telegram"></a>
 </div>
 <span id="aboutpage"><p id="sec4last" style=" margin-top:5px; " ><i>@BabberTurbanTrainingCentre</i></p></span>
 </div>
@@ -176,6 +209,8 @@ Learn to tie any kind of all turban
 contact us in any function for turban services 
 specialist in groom turban
 sikh wedding and Hindu wedding. </p>
+<h5 style="color:#0b5876;">Find us on google maps</h5>
+<iframe id="mapus" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7076455.68819595!2d72.96950065750667!3d29.999523024090248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e4763c5fc1f9b%3A0x7d7b81b33b2e2394!2sBabber%20Turban%20Training%20Center!5e0!3m2!1sen!2sin!4v1642938861893!5m2!1sen!2sin" width="100%" height="186" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 <div id="part2">
 
@@ -188,6 +223,7 @@ You can also learn any kind of turban from our youtube channel
 <span style="color:#59baff;"><b>Instagram</b></span>
 <a href="https://www.instagram.com/mr.babber/">https://www.instagram.com/mr.babber/</a>
 <b>username:- @mr.babber</b>
+
 <span style="color:#59baff;" ><b>Contact Us On</b></span>
 +91 80530-27087
 Kawaljeet Singh (Turban Coach)
@@ -223,22 +259,11 @@ Kawaljeet Singh (Turban Coach)
 <div class="stylecard row row-cols-1 row-cols-md-4 g-4">
   <div class="col">
     <div class="card ">
-      <div class="cardimg" style="display:flex;justify-content:space-evenly; align-items:center;"> <img src="style1.PNG" class="card-img-top"  alt="..."></div>
-      <div class="card-body">
-        <h5 class="card-title">turban style 1</h5>
-        <p class="card-text ">This is a longer card with supporting text .<span class="hidett" id="hidetext">djfbwk a longer card with supporting text  a longer card with supporting text   a longer card with supporting text   a longer card with supporting text   a longer card with supporting text jhfwhklehjrwlghwieh</span></p>
-		<button id="showbtn1" class="clkbtn" onclick="show()">read more</button>
-		<button id="hidebtn1" class="clkbtn" onclick="hidedata()">read less</button>
-		
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card ">
       <div class="cardimg" style="display:flex;justify-content:space-evenly; align-items:center;"> <img src="style2.png" class="card-img-top" alt="..."></div>
       <div class="card-body">
-        <h5 class="card-title">turban style 2</h5>
-        <p class="card-text">This is a short card with supporting text.<span class="hidett" id="hidetext2">djfbwk a longer card with supporting text  a longer card with supporting text   a longer card with supporting text   a longer card with supporting text   a longer card with supporting text jhfwhklehjrwlghwieh</span></p>
+        <h5 class="card-title">Patiala Shahi Dastar</h5>
+        <p class="card-text" >Patiala Shahi Pagg is a turban style based upon the turban styles of old kings.<span class="hidett" id="hidetext2">This is also known as Tehdi pagg. It is the most common among all the turbans and usually worn in the north part of India, especially in Punjab.
+		  </span></p>
 		<button id="showbtn2" class="clkbtn" onclick="show2()">read more</button>
 		<button id="hidebtn2" class="clkbtn" onclick="hidedata2()">read less</button>
       </div>
@@ -246,10 +271,23 @@ Kawaljeet Singh (Turban Coach)
   </div>
   <div class="col">
     <div class="card ">
+      <div class="cardimg" style="display:flex;justify-content:space-evenly; align-items:center;"> <img src="style1.PNG" class="card-img-top"  alt="..."></div>
+      <div class="card-body">
+        <h5 class="card-title">Double Larhi Dastar</h5>
+        <p class="card-text ">This is a creative turban style in which single larh is divided into two larh. <span class="hidett" id="hidetext">People love to tie this style occasionally. This style is one of the famous styles among royal people.We can tie this style in many forms including Patiala Shahi, Morni, Semi Patiala Shahi.</span></p>
+		<button id="showbtn1" class="clkbtn" onclick="show()">read more</button>
+		<button id="hidebtn1" class="clkbtn" onclick="hidedata()">read less</button>
+		
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card ">
       <div class="cardimg" style="display:flex;justify-content:space-evenly; align-items:center;"> <img src="style3.PNG" class="card-img-top" alt="..."></div>
       <div class="card-body">
-        <h5 class="card-title">turban style 3</h5>
-        <p class="card-text">This is a longer card with supporting text .<span  class="hidett" id="hidetext3">djfbwk a longer card with supporting text  a longer card with supporting text   a longer card with supporting text   a longer card with supporting text   a longer card with supporting text jhfwhklehjrwlghwieh</span></p>
+        <h5 class="card-title">Wattan wali Dastar</h5>
+        <p class="card-text">This is a very common Sikh Turban style and this turban is also based upon old style.  <span  class="hidett" id="hidetext3">It is very easy to tie up. This style is also known as free style turban. It is divided in the middle due to the amount of wraps(watt) it rounds at the top.</span></p>
 		<button id="showbtn3" class="clkbtn" onclick="show3()">read more</button>
 		<button id="hidebtn3" class="clkbtn" onclick="hidedata3()">read less</button>
       </div>
@@ -259,8 +297,8 @@ Kawaljeet Singh (Turban Coach)
     <div class="card ">
        <div class="cardimg" style="display:flex;justify-content:space-evenly; align-items:center;"><img src="style 4.png" class="card-img-top" alt="..."></div>
       <div class="card-body">
-        <h5 class="card-title">turban style 4</h5>
-        <p class="card-text">This is a longer card with supporting text ..<span class="hidett" id="hidetext4">djfbwk a longer card with supporting text  a longer card with supporting text   a longer card with supporting text   a longer card with supporting text   a longer card with supporting text jhfwhklehjrwlghwieh</span></p>
+        <h5 class="card-title">3D Dastar</h5>
+        <p class="card-text">This is a new style of turban and is widely famous among the new generation.<span class="hidett" id="hidetext4">This style is tie up by giving a new 3d look to our normal Patiala Shahi, Semi patiala shahi or Morni Dastar. Sikh People mostly wore this style during different occations, competitions .   </span></p>
 		<button id="showbtn4" class="clkbtn" onclick="show4()">read more</button>
 		<button id="hidebtn4" class="clkbtn" onclick="hidedata4()">read less</button>
       </div>
@@ -270,8 +308,8 @@ Kawaljeet Singh (Turban Coach)
     <div class="card ">
        <div class="cardimg" style="display:flex;justify-content:space-evenly; align-items:center;"><img src="style5.PNG" class="card-img-top" alt="..."></div>
       <div class="card-body">
-        <h5 class="card-title">turban style 5</h5>
-        <p class="card-text">This is a longer card with supporting text ..<span class="hidett" id="hidetext5">djfbwk a longer card with supporting text  a longer card with supporting text   a longer card with supporting text   a longer card with supporting text   a longer card with supporting text jhfwhklehjrwlghwieh</span></p>
+        <h5 class="card-title">Triple Larh Dastar</h5>
+        <p class="card-text">This Dastar style is also a creative style as double larhi dastar. In this Style<span class="hidett" id="hidetext5">   we usually divide one larh into three instead of two. This style is widely famous in the youngsters who love to wear different styles of turbans. </span></p>
 		<button id="showbtn5" class="clkbtn" onclick="show5()">read more</button>
 		<button id="hidebtn5" class="clkbtn" onclick="hidedata5()">read less</button>
       </div>
@@ -287,14 +325,147 @@ Kawaljeet Singh (Turban Coach)
 <div>
 <center><h2 style="height:70px; color:white; background:#0b5876; display:flex; justify-content:center; align-items:center;">Turban Bookings </h2></center>
 </div>
-<div style="height:230px; display:flex; justify-content:center; align-items:center; flex-direction:column;">
+<div style="height:200px; display:flex; justify-content:center; align-items:center; flex-direction:column;">
 <h4><center>For appointments and booking contact to us...</center></h4><br>
 <center><a href="tel:8053027087"><button id="phonebtn" class="clkbtn"><i class="fas fa-phone-alt"></i> Contact Us </button></a></center>
 </div>
+<div id="freelast"></div>
 </div>
-<div class="footer">
+
+
+<div class="turbanstyle gallery" id="stylepage">
+<center><h2>Gallery </h2><hr width="100"></center>
+
+
+<div class="stylecard row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card ">
+      <div class="cardimg galimg" > <img src="bbgallery1.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card ">
+      <div class="cardimg galimg" > <img src="bbgallery2.jpeg" style="width:100%; height:100%;" class="card-img-top"  alt="..."></div>
+      
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card ">
+      <div class="cardimg galimg"> <img src="bbgallery3.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg" ><img src="bbgallery4.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg"><img src="bbgallery5.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+    
+    </div>
+  </div>
+   <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg"><img src="bbgallery6.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+    
+    </div>
+  </div>
+   <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg"><img src="bbgallery7.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+    
+    </div>
+  </div>
+   <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg"><img src="bbgallery8.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+    
+    </div>
+  </div>
+   <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg"><img src="bbgallery9.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+    
+    </div>
+  </div>
+   <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg"><img src="bbgallery10.jpeg" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+    
+    </div>
+  </div>
+   <div class="col">
+    <div class="card ">
+       <div class="cardimg galimg"><img src="C:\Users\Jasdev Singh\Downloads\soon.png" style="width:100%; height:100%;" class="card-img-top" alt="..."></div>
+    
+    </div>
+  </div>
 </div>
 </div>
+<div class="footdata" id="footer">
+<div class="footer" style="color:white; font-weight:normal;">
+<div id="aboutft">
+<h4>About </h4>
+<p id="pfoot">Babber Turban Training Centre</p>
+<hr>
+<p>Learn to tie all kinds of dastar Learn to tie any kind of all turban 
+contact us in any function for turban services.
+<span id="mobhide">
+Specialist in groom turban
+sikh wedding and Hindu wedding.</p></span>
+</div>
+<div >
+<div id="fstyle" >
+
+<h4> Quick Links</h4>
+<div id="links" >
+<ul>
+<li><a href="#freediv"> Home page</a></li>
+<li><a href="#aboutpage"> About Us</a>
+<li><a href="#freediv2"> Youtube videos</a>
+<li><a href="#freediv3"> Turban styles</a>
+<li><a href="#freediv4"> Turban Bookings</a>
+<li><a href="#freelast"> Gallery</a>
+</ul>
+</div>
+</div>
+</div>
+ <span id="mobhide">
+<div style=" width:100%;">
+<div id="fstyle">
+<h4 style="margin-left:-60px;">Contact</h4>
+<div id="liicon">
+<a href="https://wa.me/message/UUX4XBPTHX7YD1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://m.facebook.com/Babber-Turban-Training-Center-106855665228513/?ref=bookmarks" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/babberturbantrainingcenter/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://t.me/BabberTurbanTrainingCenter" target="_blank"><i class="fab fa-telegram"></i></a>
+<a href="https://www.youtube.com/channel/UC-hNSqAx6vCGlsqPLHFtZIg" target="_blank"> <i class="fab fa-youtube"></i></a>
+</div>
+<hr width="200">
+<a href="tel:80530-27087"style="text-decoration:none;"><i class="fas fa-phone-alt" ></i><span style="margin-left:10px;"><u>+91 80530-27087</u> </span></a><br>
+<a href="mailto:Ksbabber9370@gmail.com" style="text-decoration:none;"><i class="fas fa-envelope" ></i><span style="margin-left:10px;"><u>click here to mail</u></span></a>
+</div>
+</div>
+</span>
+</span>
+</div>
+</div>
+
+<div class="cpright"> 
+<div id="lasticons">
+<a href="https://wa.me/message/UUX4XBPTHX7YD1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://m.facebook.com/Babber-Turban-Training-Center-106855665228513/?ref=bookmarks" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/babberturbantrainingcenter/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://t.me/BabberTurbanTrainingCenter"target="_blank"><i class="fab fa-telegram"></i></a>
+<a href="https://www.youtube.com/channel/UC-hNSqAx6vCGlsqPLHFtZIg" target="_blank"> <i class="fab fa-youtube"></i></a>
+</div>
+</div>
+
 <script>
 var hide=document.getElementById('hidetext');
 var hide2=document.getElementById('hidetext2');
